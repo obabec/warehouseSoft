@@ -1,6 +1,6 @@
 package menu;
 
-import user.Iuser;
+import utils.user.Iuser;
 
 import javax.swing.*;
 

@@ -1,5 +1,5 @@
 import menu.Menu;
-import user.User;
+import utils.user.User;
 
 import javax.swing.*;
 

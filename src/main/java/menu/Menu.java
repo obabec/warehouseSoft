@@ -1,16 +1,27 @@
 package menu;
 
-import user.Iuser;
+import utils.user.Iuser;
 
 import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class Menu implements Imenu{
     private JPanel menuPanel;
-    private JButton button1;
+    private JButton skladoveZasobyButton;
     private JButton button2;
     private JButton button3;
     private JButton button4;
     private JButton button5;
+
+    public Menu() {
+        skladoveZasobyButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+            }
+        });
+    }
 
     @Override
     public void initializeMenu(JFrame frame) {
@@ -23,9 +34,6 @@ public class Menu implements Imenu{
 
     @Override
     public void setTypeOfMenu(Iuser user) {
-        if(user.getAuth() == false) {
-            button5.setVisible(false);
-            button4.setVisible(false);
-        }
+
     }
 }
